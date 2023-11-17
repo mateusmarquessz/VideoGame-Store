@@ -26,7 +26,7 @@ function Navbar() {
         <ul>
           <li>
             <a href="#">
-                <FaDesktop className='icon-margin' />
+                <FaDesktop className='icon-margin'/>
                 PC
             </a>
           </li>
@@ -42,6 +42,7 @@ function Navbar() {
           <li>
           <a href="#">
             <FaUser />
+            Entrar
           </a>
           </li>
         </ul>
