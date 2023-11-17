@@ -1,44 +1,54 @@
 // src/Navbar.js
-import React from 'react';
-import './Navbar.css';
-import { FaSearch, FaShoppingCart, FaUser, FaHeart } from 'react-icons/fa';
+import React, { useState } from 'react';
+import './componetes/Navbar.css';
+import {FaUser,FaDesktop } from 'react-icons/fa';
 
 function Navbar() {
+  const [navAberta, setNavAberta] = useState(false);
+
+  const abrirNav = () => {
+    setNavAberta(true);
+  };
+
+  const fecharNav = () => {
+    setNavAberta(false);
+  };
+
   return (
-    <nav>
-      <ul>
-      <li>
-        <a href="#">Loja XYZ</a>
-        </li>
-        <li>
-            <a href="#">PC</a>
-            </li>
-        <li>
+    <div>
+      <button onClick={abrirNav}>☰</button>
+
+      {navAberta && (
+        
+        <div className="nav">
+          <button onClick={fecharNav}>☰</button>
+          <nav>
+        <ul>
+          <li>
+            <a href="#">
+                <FaDesktop className='icon-margin' />
+                PC
+            </a>
+          </li>
+          <li>
             <a href="#">XBOX</a>
-            </li>
-        <li>
+          </li>
+          <li>
             <a href="#">PSN</a>
-            </li>
-        <li>
+          </li>
+          <li>
             <a href="#">Nintendo</a>
-            </li>
-        <li className="search">
-        <div className="search-icon">
-            <FaSearch />
-          </div>
-          <input type="text" placeholder="Search" />
-        </li>
-        <li>
-            <a href="#"><FaShoppingCart /></a>
-            </li>
-        <li>
-            <a href="#"><FaHeart/></a>
-            </li>
-        <li>
-            <a href="#"><FaUser/></a>
-            </li>
-      </ul>
-    </nav>
+          </li>
+          <li>
+          <a href="#">
+            <FaUser />
+          </a>
+          </li>
+        </ul>
+      </nav>
+        </div>
+      )}
+    </div>
   );
 }
 
