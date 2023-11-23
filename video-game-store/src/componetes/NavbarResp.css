@@ -5,8 +5,12 @@
   grid-template-columns: auto 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
+  background-color: rgba(255, 1, 1, 0.5);
+  z-index: 3;
 }
-
+.nav-desktop{
+  margin-top: -30px;
+}
 .Logo img {
   width: 100px;
 }
@@ -43,10 +47,30 @@ nav {
   color: #fff;
 }
 
+.jogos{
+  margin-left: 100px;
+}
 
+.jogos ul li:hover {
+  background-color: lightgray;
+  border: 2px solid white;
+}
 
+.jogos ul li {
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
 
+.jogos ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
 
+.jogos ul li a .icon-margin {
+  margin-right: 5px;
+}
 
 
 
