@@ -1,0 +1,34 @@
+/* Estilo básico para o componente ImageCarousel */
+.ImageCarousel {
+    width: 50%; 
+    margin: auto; 
+  }
+  
+  /* Estilo para as imagens dentro do carrossel */
+  .ImageCarousel img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para a barra de navegação (pontos) do carrossel */
+  .slick-dots {
+    text-align: center;
+    margin-top: 10px; 
+  }
+  
+  /* Estilo para a legenda que exibe o número da imagem atual */
+  .ImageCarousel p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para os pontos ativos (pontos que correspondem à imagem atual) */
+  .slick-dots li.slick-active button {
+    background-color: #007bff; 
+  }
+  
