@@ -70,7 +70,7 @@ function NavbarResp() {
               </li>
               <li>
                 <a href="#">
-                  <FaUser />
+                  <FaUser className='icon-margin'/>
                   Entrar
                 </a>
               </li>
