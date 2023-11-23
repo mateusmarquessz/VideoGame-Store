@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaDesktop, FaGamepad, FaPlaystation, FaUser } from 'react-icons/fa';
 import { TbDeviceNintendo } from 'react-icons/tb';
+import { FaShoppingCart, FaHeart, FaSearch } from 'react-icons/fa';
 
 import './componetes/NavbarResp.css';
 
@@ -79,9 +80,60 @@ function NavbarResp() {
       )}
 
       {exibirNavbarDesktop && (
-        <div className="nav-desktop">
-          
-        </div>
+        <header className="nav-desktop">
+          <nav className='flex-container'>
+          <div className='Logo'>
+          <a>
+            <img src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/55213771518339.5bc7dc8be780b.png' alt='Logo'>
+            </img>
+          </a>
+          </div>
+            <div className='jogos'>
+              <ul>
+                <li>
+                  <a href="#">
+                  <FaDesktop className='icon-margin'/>
+                    PC
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                  <FaGamepad className='icon-margin'/>
+                    XBOX
+                    </a>
+                  </li>
+                <li>
+                  <a href="#">
+                  <FaPlaystation className='icon-margin'/>
+                    PSN
+                    </a>
+                  </li>
+                <li>
+                  <a href="#">
+                  <TbDeviceNintendo className='icon-margin'/>
+                    Nintendo</a>
+                  </li>
+              </ul>
+            </div>
+
+            <div className='Usuario'>
+            <ul>
+              <li>
+              <a href="#"> 
+                <FaUser className='icon-margin'/>
+                Entrar
+                </a>
+              </li>
+              <li>
+                <a href="#"><FaHeart/></a>
+              </li>
+              <li>
+              <a href="#"><FaShoppingCart /></a>
+              </li>
+            </ul>
+            </div>
+          </nav>
+        </header>
       )}
     </div>
   );
