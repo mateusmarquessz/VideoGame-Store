@@ -27,8 +27,3 @@
     font-size: 16px;
   }
   
-  /* Estilo para os pontos ativos (pontos que correspondem à imagem atual) */
-  .slick-dots li.slick-active button {
-    background-color: #007bff; 
-  }
-  
