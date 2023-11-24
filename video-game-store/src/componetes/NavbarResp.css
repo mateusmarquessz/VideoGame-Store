@@ -5,8 +5,6 @@
   grid-template-columns: auto 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  background-color: rgba(255, 1, 1, 0.5);
-  z-index: 3;
 }
 .nav-desktop{
   margin-top: -30px;

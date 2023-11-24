@@ -1,7 +1,9 @@
 /* Estilo básico para o componente ImageCarousel */
 .ImageCarousel {
     width: 50%; 
-    margin: auto; 
+    margin: auto;
+    background-color: #3F405B;
+    z-index: 3;
   }
   
   /* Estilo para as imagens dentro do carrossel */
