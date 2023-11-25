@@ -1,0 +1,10 @@
+/* src/Game.css */
+.Game {
+    text-align: center;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
