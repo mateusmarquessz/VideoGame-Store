@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaDesktop, FaGamepad, FaPlaystation, FaUser } from 'react-icons/fa';
 import { TbDeviceNintendo } from 'react-icons/tb';
-import { FaShoppingCart, FaHeart, FaSearch } from 'react-icons/fa';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 
 import './componetes/NavbarResp.css';
 
