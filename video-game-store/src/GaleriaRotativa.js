@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import './componetes/GaleriaRotativa.css';
 
 const ImageCarousel = () => {
-  // Lista de URLs de imagens
   const images = [
     'https://rubberchickengames.com/wp-content/uploads/2018/07/dark-souls-remastered.jpg',
     'https://image.api.playstation.com/vulcan/img/rnd/202201/2122/J7oJE8POxtzUdpfGRKTeErQt.jpg',
@@ -38,13 +37,13 @@ const ImageCarousel = () => {
 
   return (
     <div className="ImageCarousel">
-      <Slider ref={sliderRef} {...settings}>
-        {images.map((imageUrl, index) => (
-          <div key={index}>
-            <img src={imageUrl} alt={`Imagem ${index + 1}`} />
-          </div>
-        ))}
-      </Slider>
+        <Slider ref={sliderRef} {...settings}>
+          {images.map((imageUrl, index) => (
+            <div key={index} className='divImagem'>
+              <img src={imageUrl} alt={`Imagem ${index + 1}`} />
+            </div>
+          ))}
+        </Slider>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 .ImageCarousel {
     width: 50%; 
     margin: auto;
+    display: inline-block;
   }
   
   /* Estilo para as imagens dentro do carrossel */
@@ -19,11 +20,3 @@
     text-align: center;
     margin-top: 10px; 
   }
-  
-  /* Estilo para a legenda que exibe o número da imagem atual */
-  .ImageCarousel p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
