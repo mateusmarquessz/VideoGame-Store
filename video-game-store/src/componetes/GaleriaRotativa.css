@@ -1,7 +1,7 @@
 /* Estilo básico para o componente ImageCarousel */
 .ImageCarousel {
     width: 50%; 
-    margin: auto;
+    margin: 7px;
     display: inline-block;
   }
   
