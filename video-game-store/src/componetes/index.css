@@ -3,5 +3,10 @@
 }
 
 body{
-  background-color :#343751;
+  background-color :#2A2C41;
+}
+
+.DivCentral {
+  background: rgb(42,44,65);
+  background: radial-gradient(circle, rgba(42,44,65,0.969625350140056) 56%, rgba(42,44,65,1) 93%);
 }
