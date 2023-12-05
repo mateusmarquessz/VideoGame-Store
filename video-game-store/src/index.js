@@ -6,6 +6,7 @@ import ImageCarousel from './GaleriaRotativa'
 import Informacoes from './Infor'
 import Game from './Games';
 import Texto from './Texto'
+import Footer from './Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,5 +17,7 @@ root.render(
     <ImageCarousel/>
     <Informacoes/>
     </div>
+    <Game/>
+    <Footer/>
   </React.StrictMode>
 );

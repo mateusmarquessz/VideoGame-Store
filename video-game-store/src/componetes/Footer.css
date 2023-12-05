@@ -1,0 +1,74 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #363953;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-social li {
+    margin-right: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #fff;
+}
+
+/* Adicione estilos para links quando estiverem em hover ou focus para melhorar a experiência do usuário */
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: #ffd700; /* Cor de destaque (pode ser ajustada) */
+}
